@@ -1,0 +1,19 @@
+data:
+  max_length: 512
+  train_path: data/train.csv
+  val_path: data/val.csv
+generation:
+  max_new_tokens: 64
+  temperature: 0.05
+lora:
+  alpha: 32
+  dropout: 0.05
+  r: 16
+model:
+  name: yandex/YandexGPT-5-Lite-8B-pretrain
+training:
+  batch_size: 2
+  epochs: 15
+  grad_accumulation_steps: 8
+  learning_rate: 5.0e-06
+  warmup_ratio: 0.1
