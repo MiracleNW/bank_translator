@@ -1,0 +1,19 @@
+{
+  "max_input_tokens": 512,
+  "max_new_tokens": 160,
+  "batch_size_cpu": 1,
+  "batch_size_cuda": 1,
+  "repetition_penalty": 1.05,
+  "use_cache": true,
+  "skip_without_latin": true,
+  "cuda_strategy": "full_gpu",
+  "allow_hf_download": false,
+  "base_model_path": "",
+  "base_model_candidates": [
+    "models/yandex_gpt_base",
+    "models/yandex_gpt_full",
+    "models/YandexGPT-5-Lite-8B-pretrain",
+    "models/yandex_gpt",
+    "models/yandex/YandexGPT-5-Lite-8B-pretrain"
+  ]
+}

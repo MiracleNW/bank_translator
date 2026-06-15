@@ -1,0 +1,30 @@
+model:
+  name: yandex/YandexGPT-5-Lite-8B-pretrain
+  allow_hf_download: false
+  base_model_path: ""
+  base_model_candidates:
+    - models/yandex_gpt_base
+    - models/yandex_gpt_full
+    - models/YandexGPT-5-Lite-8B-pretrain
+    - models/yandex_gpt
+    - models/yandex/YandexGPT-5-Lite-8B-pretrain
+
+data:
+  train_path: data/train.csv
+  val_path: data/val.csv
+  max_length: 768
+
+training:
+  epochs: 15
+  batch_size: 2
+  grad_accumulation_steps: 8
+  learning_rate: 0.000003
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+
+generation:
+  max_new_tokens: 128
+  temperature: 0.01

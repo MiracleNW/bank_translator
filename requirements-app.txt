@@ -1,0 +1,12 @@
+PyQt5>=5.15,<5.16
+python-docx>=1.1
+# torch is installed separately in .bat files from the official PyTorch wheel index.
+# Do not pin torch here, otherwise pip can replace the selected CPU/CUDA build.
+transformers>=4.40
+peft>=0.11
+accelerate>=0.30
+safetensors>=0.4
+tokenizers>=0.19
+huggingface-hub>=0.23
+sentencepiece>=0.2
+protobuf>=4.25
